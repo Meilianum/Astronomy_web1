@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Star Collection</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer">
+  <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script> -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;500&display=swap"
+    rel="stylesheet" />
+  <style>
+    body {
+      margin-top: 100px;
+      margin: 50px;
+    }
+    .card {
+      background: rgba(255, 255, 255, 0.1);
+      /* backdrop-filter: blur(10px); */
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    }
+
+    .card img {
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .card img:hover {
+      animation: bounce 0.6s ease infinite;
+      transform: scale(1.1);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    }
+
+    @keyframes bounce {
+      0%,
+      100% {
+        transform: translateY(0) scale(1.1);
+      }
+
+      50% {
+        transform: translateY(-10px) scale(1.1);
+      }
+    }
+
+    p {
+      color: #0f0e0e;
+    }
+
+    h1,
+    h2 {
+      color: #071955;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+    }
+
+    .constellation-info {
+      background-color: #f0f4f8;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    }
+
+    .constellation-info h2 {
+      color: #071955;
+    }
+
+    .constellation-info p {
+      color: #333;
+    }
+  </style>
+</head>
+
+<body class="min-h-height">
+  <div id="header"></div>
+
+  <!-- Constellation Explanation Section -->
+  <section class="container mx-auto my-8 constellation-info">
+    <h2 class="text-2xl font-semibold mb-4">What is a Constellation?</h2>
+    <p>A constellation is a group of stars that form a recognizable pattern or shape in the night sky. These patterns often resemble animals, mythological characters, or objects, and they have been used for navigation and storytelling for thousands of years. Constellations are not physically connected — the stars in a constellation can be light years apart from each other.</p>
+    <p>Constellations are often formed by stars that are at different distances from Earth but appear close together when viewed from our perspective. Over time, astronomers have divided the sky into 88 modern constellations. Some of the most famous constellations include:</p>
+    <ul class="list-disc pl-6">
+      <li><strong>Orion:</strong> The hunter, home to the bright stars Betelgeuse and Rigel.</li>
+      <li><strong>Ursa Major:</strong> Contains the Big Dipper, one of the most recognizable asterisms.</li>
+      <li><strong>Lyra:</strong> A small constellation, home to the bright star Vega.</li>
+      <li><strong>Canis Major:</strong> Contains Sirius, the brightest star in the night sky.</li>
+    </ul>
+  </section>
+
+  <!-- <h1 class="text-4xl font-bold text-center mb-8"><i class="fas fa-star icon"></i> STAR COLLECTION</h1> -->
+
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+    <!-- Star Cards (Images remain unchanged) -->
+    <div class="card rounded-lg p-4 transform hover:scale-105 transition duration-300">
+      <img src="https://i.pinimg.com/736x/20/d4/c1/20d4c1da2608ea915694c2f57712a78e.jpg" alt="Sirius Star"
+        class="w-full h-48 object-cover rounded-md mb-4" />
+      <div class="text-center">
+        <h2 class="text-xl font-semibold">Sirius</h2>
+        <p>Brightest star in the night sky, part of the Canis Major constellation.</p>
+      </div>
+    </div>
+
+    <div class="card rounded-lg p-4 transform hover:scale-105 transition duration-300">
+      <img src="https://b2644566.smushcdn.com/2644566/wp-content/uploads/betelgeuse-star-alpha-orionis.jpg?lossy=2&strip=1&webp=0"
+        alt="Betelgeuse Star" class="w-full h-48 object-cover rounded-md mb-4" />
+      <div class="text-center">
+        <h2 class="text-xl font-semibold">Betelgeuse</h2>
+        <p>A red supergiant in the Orion constellation, nearing the end of its life cycle.</p>
+      </div>
+    </div>
+
+    <div class="card rounded-lg p-4 transform hover:scale-105 transition duration-300">
+      <img src="https://assets.palmspringslife.com/wp-content/uploads/2022/02/01125511/polaris.jpg"
+        alt="Polaris Star" class="w-full h-48 object-cover rounded-md mb-4" />
+      <div class="text-center">
+        <h2 class="text-xl font-semibold">Polaris</h2>
+        <p>The North Star, part of the Ursa Minor constellation, used for navigation.</p>
+      </div>
+    </div>
+
+    <div class="card rounded-lg p-4 transform hover:scale-105 transition duration-300">
+      <img src="https://www.constellation-guide.com/wp-content/uploads/2014/07/Alpha-Centauri-in-the-sky.jpg"
+        alt="Alpha Centauri" class="w-full h-48 object-cover rounded-md mb-4" />
+      <div class="text-center">
+        <h2 class="text-xl font-semibold">Alpha Centauri</h2>
+        <p>The closest star system to Earth, located in the constellation Centaurus.</p>
+      </div>
+    </div>
+
+    <div class="card rounded-lg p-4 transform hover:scale-105 transition duration-300">
+      <img src="https://miro.medium.com/v2/resize:fit:1400/1*-k-11_uUL7GlZaXU27Avhw.jpeg" alt="Vega Star"
+        class="w-full h-48 object-cover rounded-md mb-4" />
+      <div class="text-center">
+        <h2 class="text-xl font-semibold">Vega</h2>
+        <p>A bright star in the Lyra constellation, part of the Summer Triangle.</p>
+      </div>
+    </div>
+    
+
+
+    <div class="card rounded-lg p-4 transform hover:scale-105 transition duration-300">
+      <img src="https://www.star-registration.com/cdn/shop/articles/31_Jungfrau_1200x1200.jpg?v=1681373719"
+        alt="Spica Star" class="w-full h-48 object-cover rounded-md mb-4" />
+      <div class="text-center">
+        <h2 class="text-xl font-semibold">Spica</h2>
+        <p>The brightest star in the Virgo constellation, a binary star system.</p>
+      </div>
+    </div>
+  </div>
+
+  <div id="footer"></div>
+
+  <script>
+    // Fetch and include the header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('header').innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching the header:', error));
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching the footer:', error));
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

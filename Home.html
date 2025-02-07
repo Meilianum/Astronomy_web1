@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Astronomy Hub</title>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+   <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="/css/bootstrap.css">
+ 
+
+  </head>
+
+  <div id="header"></div>
+<body>
+
+  
+  <!-- row this class is a part of bootstrap grid system . It creates a horizontal group of columns . It defines
+    the container 
+   where the columns will reside. -->
+  <!-- align-items-stretch is a part of Bootstrap's Flexbox utilities  it make sure that the colum has equal height -->
+    
+  <div class="row align-items-stretch ">
+      <h1 >Welcome to the World of Astronomy Hub!</h1>
+      <h3>Discover the latest updates about space exploration, celestial events, and more.</h3>
+      <!-- Text Section -->
+      <div class="col-lg-5 col-md-6 col-sm-12">
+  
+        <!-- Image Section -->
+        <!-- The d-flex class is used to add flexbox in the column,
+          and align-items-center centers the content (the image) vertically within the column. -->
+        <div class="col-lg-10 col-md-6 col-sm-12 d-flex align-items-center ">
+          <img id="astronomyImage"  
+          src="image/solar.avif" alt="Astronomy"
+          class="img-fluid">
+        </div>
+      </div>
+    
+
+      <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+        <div>
+
+          <h2 style="text-align: center; margin-top:5px;">The Solar System</h2>
+       
+          <p class="text-justify mt-3">
+            The <strong> Solar System</strong> is a vast region of space, centered around the
+            <strong>Sun</strong>, a star that provides energy and gravity to hold everything in place. It
+            consists of eight planets, moons, dwarf planets, comets, asteroids, and other celestial
+            bodies.
+          </p>
+        
+          <h3>Inner Planets:</h3>
+         
+          <p>
+            These include <strong>Mercury</strong>, <strong>Venus</strong>, <strong>Earth</strong>, and
+            <strong>Mars</strong>. They are rocky, smaller, and closer to the Sun.
+          </p>
+          
+          <h3>Outer Planets:</h3>
+        
+          <p>
+            These are <strong>Jupiter</strong>, <strong>Saturn</strong>, <strong>Uranus</strong>, and
+            <strong>Neptune</strong>. They are much larger and are mostly made of gas and ice.
+          </p>
+          
+          <h3>Big Bang Theory</h3>
+          <p>
+            The <strong>Big Bang Theory</strong> is the leading explanation for the origin of the universe. It proposes
+            that the universe began as a singularity, a point of infinite density and temperature, around 13.8 billion
+            years ago. This singularity then expanded rapidly, cooling down and forming the universe as we know it today.
+          </p>
+        </div>
+       
+      </div>
+      
+
+    </div>
+    <!-- <div class="col-sm-4 col-md-4 col-lg-6"> -->
+    <div id="btn1" class="col-sm-4 col-md-4 col-lg-6" >
+      <!-- Button to change the image -->
+      <button type="button" class="btn btn-success" onclick="changeImage()">change Image</button>
+  
+    </div>
+  </div>
+    <div class="container-fluid">
+      <div class="row">
+        <!-- Card 1 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="image/man3.jpeg" class="card-img-top" alt=".spaceman..">
+            <div class="card-body">
+              <h5 class="card-title">The Moon Landing</h5>
+              <p class="card-text">Neil Armstrong: First Foot on the Moon. Apollo 11: A Giant leap to the  Moon during the Apollo 11 mission</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal1">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+   
+        <!-- Card 2 -->
+        <div class="col-sm-6 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="/image/pluto.webp" class="card-img-top" alt="pluto">
+            <div class="card-body">
+              <h5 class="card-title">Recent Discoveries  Pluto</h5>
+              <p class="card-text">These features, over 150 km across and at least 4 km high, indicate geologically-recent material.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal2">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 3 -->
+        <div class="col-sm-4 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="image/MMoApqFVhAdDKTyhuxqo67-1200-80.jpg" class="card-img-top" alt="galaxy">
+            <div class="card-body">
+              <h5 class="card-title">First Black Hole Image</h5>
+              <p class="card-text">The historic capture of the first-ever image of a black hole was achieved by the Event Horizon.</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal3">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+    
+        <!-- Card 4 -->
+        <div class="col-sm-4 col-md-4 col-lg-3">
+          <div class="card">
+            <img src="image/universe.webp" class="card-img-top" alt="Curiosity Rover">
+            <div class="card-body">
+              <h5 class="card-title">The Evolution of Earth</h5>
+              <p class="card-text">The evolution of Earth has taken place over billions of years. The process began around 4.5 billion years ago</p>
+              <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modal4">
+                Read More
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Modal 1 -->
+    <div class="modal fade" id="modal1" tabindex="-1" aria-labelledby="modal1Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal1Label"><i class="fa-regular fa-moon"></i>The Moon Landing</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <img src="image/neil (14).jpeg" alt="neil1" style="height:100px; width: 100px; margin-left: 200px;">
+          <div class="modal-body">
+            Neil Armstrong's invention was not directly about creating a product,
+            but his historic achievement was the first human landing on the Moon during the Apollo 11 mission on July
+            20,
+            1969. He became the first person to step on the Moon, marking a giant leap in human space exploration.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="modal fade" id="modal2" tabindex="-1" aria-labelledby="modal2Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal2Label"><i class="fa-star"></i>Discoveries about Pluto</h5>
+
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <img src="image/g.jpeg" alt="sun" style="height:100px; width: 100px; margin-left: 200px;">
+          <div class="modal-body">
+            The term "9 planets" traditionally referred to the eight planets of our solar system, plus Pluto, which was
+            considered the ninth until it was reclassified in 2006 by the International Astronomical Union (IAU) as a
+            "dwarf planet."
+
+            Here's a quick look at the planets:
+
+            1. Mercury – The smallest planet, closest to the Sun.
+            2. Venus – Known as Earth’s "twin" due to its similar size but with a toxic atmosphere.
+            3. Earth – Our home planet, the only known one to support life.
+            4. Mars – The "Red Planet," a focus for future exploration.
+            5. Jupiter – The largest planet in the solar system.
+            6. Saturn – Famous for its stunning ring system.
+            7. Uranus – An ice giant with a unique sideways rotation.
+            8. Neptune – Known for its deep blue color and strong winds.
+            9.Pluto – Once the ninth planet, now classified as a dwarf planet after the 2006 decision by the IAU.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="modal fade" id="modal3" tabindex="-1" aria-labelledby="modal3Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal3Label"><i class="fa fa-satellite"></i>First Black Hole Image:</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <img src="image/black hole.jpeg" alt="black hole"
+            style="height:100px; width: 100px; margin-left: 200px; margin-top: 20px;">
+          <div class="modal-body">
+            History: The first-ever image of a black hole was captured by the Event Horizon Telescope (EHT) in April
+            2019.
+            The shot revealed the black hole at the center of M87, a massive galaxy located 55 million light-years away
+            from Earth. This historic achievement was a breakthrough in the field of astrophysics,
+            proving the existence of black holes and giving humanity a tangible view of something previously invisible.
+
+            The image was made possible by a network of telescopes across the globe working together to create an
+            Earth-sized virtual telescope,
+            capturing the shadow of the black hole's event horizon. The image not only validated Albert Einstein's
+            theory of general relativity but also opened up new avenues for understanding the mysteries of the universe.
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+   
+    <!-- Modal 4 -->
+    <div class="modal fade" id="modal4" tabindex="-1" aria-labelledby="modal4Label" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modal4Label"> <i class="fa fa-globe"></i>The Evolution of Earth</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+         
+          <img src="image/sunset.gif" alt="sunset"
+            style="height:100px; width: 100px; margin-left: 200px; margin-top: 20px;">
+          <div class="modal-body">
+            The <strong>evolution of Earth</strong> has been a long and complex process, beginning around 4.5 billion
+            years ago. The Earth was formed from a disk of gas and dust around the early Sun. Over time, it cooled and
+            developed an atmosphere, oceans, and landmasses.
+            <br>
+            <h3><strong>Key Stages:</strong></h3>
+            <p>
+              Life on Earth started as simple, single-celled organisms. Over billions of years, life evolved into more
+              complex forms, including multicellular organisms and eventually plants and animals.
+            </p>
+            <h3><strong>Formation of the Universe</strong></h3>
+            <p> After the Big Bang, the universe began to expand, and matter started to condense. This led to the formation
+              of the first stars, which later gave birth to galaxies. Over time, heavier elements were formed in stars,
+              leading to the creation of planets and other celestial bodies.
+            </p>
+            <h3><strong>Continued Expansion:</strong></h3>
+           
+            <p>
+              The universe continues to expand, and the formation of galaxies, stars, and planets continues. Our solar
+              system, for example, was formed around 4.6 billion years ago within the Milky Way galaxy.
+            </p>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            </div>
+          </div>
+
+        </div>
+        
+      </div>
+    
+ 
+    </div>
+   <!-- Footer (Dynamically Loaded) -->
+  <div id="footer" class="container-fluid"></div>
+
+  <style>
+    /* Ensure Footer Stays at Bottom */
+    /* body {
+     display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+      margin-top: 50px;
+    }
+    #content {
+       flex: 1; 
+    }
+    #footer {
+       width: 100h;
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px; 
+    } */
+  </style>
+
+  <!-- JavaScript -->
+  <script>
+    // Function to Change Image Randomly
+    function changeImage() {
+      let images = ["image/solar1.jpg", "image/download (14).jpeg","image/r (3).jpeg","image/r (4).jpeg"];
+      let randomIndex = Math.floor(Math.random() * images.length);
+      document.getElementById("astronomyImage").src = images[randomIndex];
+    }
+
+    // Fetch and Include Header
+    fetch('header.html')
+      .then(response => response.text())
+      .then(data => {
+        const header = document.getElementById('header');
+        if (header) header.innerHTML = data;
+      })
+      .catch(error => console.error('Error fetching the header:', error));
+
+    // Fetch and Include Footer
+    fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        const footer = document.getElementById('footer');
+        if (footer) footer.innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+  </script>
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+     <!-- <script src="index.js"></script> -->
+</body>
+
+</html>

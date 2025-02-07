@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!-- saved from url=(0039)http://open-notify.org/Open-Notify-API/ -->
+<html lang="en-us"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./Open Notify -- API Documentation_files/bootstrap.min.css" rel="stylesheet">
+  <link href="./Open Notify -- API Documentation_files/css" rel="stylesheet" type="text/css">
+  <link href="./Open Notify -- API Documentation_files/style.css" rel="stylesheet">
+  <link href="./Open Notify -- API Documentation_files/syntax.css" rel="stylesheet">
+  <title>Open Notify -- API Documentation</title>
+ <script type="text/javascript" async="" src="./Open Notify -- API Documentation_files/ga.js.download"></script></head>
+<body style="">
+<div class="wrapper">
+ <div id="header">
+ <div class="container">
+  <h1><a href="http://open-notify.org/">Open Notify</a></h1>
+   <ul id="navigation" class="nav nav-tabs">
+    
+      <li>
+        <a href="http://open-notify.org/">Home</a>
+      </li>
+    
+      <li class="active">
+        <a href="http://open-notify.org/Open-Notify-API">API Docs</a>
+      </li>
+    
+      <li>
+        <a href="https://github.com/open-notify">Source Code</a>
+      </li>
+    
+      <li>
+        <a href="http://open-notify.org/about.html">About</a>
+      </li>
+     
+  </ul>
+ </div>
+</div>
+<div id="content">
+ <div class="container">
+  <div class="row">
+   <div class="span3">
+    <div class="well navwell">
+      <ul class="nav nav-list">
+      <li class="nav-header">API Docs</li>
+      
+        <li>
+          <a href="http://open-notify.org/Open-Notify-API">Examples</a>
+        </li>
+      
+        <li>
+          <a href="http://open-notify.org/Open-Notify-API/ISS-Location-Now">ISS Current Location</a>
+        </li>
+      
+        <li>
+          <a href="http://open-notify.org/Open-Notify-API/People-In-Space">People In Space</a>
+        </li>
+      
+    </ul>
+
+    </div>
+   </div>
+   <div class="span8">
+    <h1 id="api-examples">API Examples</h1>
+
+<h2 id="current-iss-location">Current ISS Location</h2>
+
+<p>The <a href="http://en.wikipedia.org/wiki/International_Space_Station">International Space Station</a>
+is moving at close to 28,000 km/h so its location changes really fast! Where
+is it right now?</p>
+
+<p><strong>Documentation: <a href="http://open-notify.org/Open-Notify-API/ISS-Location-Now">ISS Location Now</a></strong></p>
+
+<h3 id="example">Example:</h3>
+
+<link rel="stylesheet" href="./Open Notify -- API Documentation_files/leaflet.css">
+
+<script src="./Open Notify -- API Documentation_files/leaflet.js.download"></script>
+
+<div id="map" style="width: 800px; height: 400px; position: relative; outline: none;" class="leaflet-container leaflet-touch leaflet-fade-anim leaflet-grab leaflet-touch-drag leaflet-touch-zoom" tabindex="0"> <div class="leaflet-pane leaflet-map-pane leaflet-pan-anim" style="transform: translate3d(283px, 29px, 0px);"><div class="leaflet-pane leaflet-tile-pane"><div class="leaflet-layer " style="z-index: 1; opacity: 1;"><div class="leaflet-tile-container leaflet-zoom-animated" style="z-index: 4; transform: translate3d(115px, 47px, 0px) scale(1);"><img alt="" src="./Open Notify -- API Documentation_files/0.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(200px, -156px, 0px); opacity: 1;"><img alt="" src="./Open Notify -- API Documentation_files/1.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(200px, 100px, 0px); opacity: 1;"><img alt="" src="./Open Notify -- API Documentation_files/0(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-56px, -156px, 0px); opacity: 1;"><img alt="" src="./Open Notify -- API Documentation_files/1(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-56px, 100px, 0px); opacity: 1;"><img alt="" src="./Open Notify -- API Documentation_files/0.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-312px, -156px, 0px); opacity: 1;"><img alt="" src="./Open Notify -- API Documentation_files/1.png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-312px, 100px, 0px); opacity: 1;"><img alt="" src="./Open Notify -- API Documentation_files/0(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-568px, -156px, 0px); opacity: 1;"><img alt="" src="./Open Notify -- API Documentation_files/1(1).png" class="leaflet-tile leaflet-tile-loaded" style="width: 256px; height: 256px; transform: translate3d(-568px, 100px, 0px); opacity: 1;"></div></div></div><div class="leaflet-pane leaflet-shadow-pane"><img src="./Open Notify -- API Documentation_files/ISSIcon_shadow.png" class="leaflet-marker-shadow leaflet-zoom-animated" style="margin-left: -30px; margin-top: -15px; width: 60px; height: 40px; transform: translate3d(117px, 170px, 0px);"></div><div class="leaflet-pane leaflet-overlay-pane"><svg pointer-events="none" class="leaflet-zoom-animated" width="960" height="480" viewBox="-363 -69 960 480" style="transform: translate3d(-363px, -69px, 0px);"><g><path class="leaflet-interactive" stroke="#c22" stroke-opacity="0.3" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" fill="#c22" fill-opacity="0.1" fill-rule="evenodd" d="M87.83637333333337,171.8226870280427a29,30 0 1,0 58,0 a29,30 0 1,0 -58,0 "></path></g></svg></div><div class="leaflet-pane leaflet-marker-pane"><img src="./Open Notify -- API Documentation_files/ISSIcon.png" class="leaflet-marker-icon leaflet-zoom-animated leaflet-interactive" tabindex="0" style="margin-left: -25px; margin-top: -15px; width: 50px; height: 30px; transform: translate3d(117px, 170px, 0px); z-index: 170;"></div><div class="leaflet-pane leaflet-tooltip-pane"></div><div class="leaflet-pane leaflet-popup-pane"></div><div class="leaflet-proxy leaflet-zoom-animated" style="transform: translate3d(58px, 280px, 0px) scale(1);"></div></div><div class="leaflet-control-container"><div class="leaflet-top leaflet-left"><div class="leaflet-control-zoom leaflet-bar leaflet-control"><a class="leaflet-control-zoom-in" href="http://open-notify.org/Open-Notify-API/#" title="Zoom in">+</a><a class="leaflet-control-zoom-out" href="http://open-notify.org/Open-Notify-API/#" title="Zoom out">-</a></div></div><div class="leaflet-top leaflet-right"></div><div class="leaflet-bottom leaflet-left"></div><div class="leaflet-bottom leaflet-right"><div class="leaflet-control-attribution leaflet-control"><a href="http://leafletjs.com/" title="A JS library for interactive maps">Leaflet</a></div></div></div></div>
+<script src="./Open Notify -- API Documentation_files/jquery-2.0.3.min.js.download"> </script>
+
+<script src="./Open Notify -- API Documentation_files/iss-now.js.download"> </script>
+
+<p>Using leaflet and jquery one can write a script to show the current location of
+the ISS and update it every 5 seconds:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="kd">function</span> <span class="nx">moveISS</span> <span class="p">()</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://api.open-notify.org/iss-now.json?callback=?</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">lat</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="dl">'</span><span class="s1">iss_position</span><span class="dl">'</span><span class="p">][</span><span class="dl">'</span><span class="s1">latitude</span><span class="dl">'</span><span class="p">];</span>
+        <span class="kd">var</span> <span class="nx">lon</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="dl">'</span><span class="s1">iss_position</span><span class="dl">'</span><span class="p">][</span><span class="dl">'</span><span class="s1">longitude</span><span class="dl">'</span><span class="p">];</span>
+
+        <span class="c1">// See leaflet docs for setting up icons and map layers</span>
+        <span class="c1">// The update to the map is done here:</span>
+        <span class="nx">iss</span><span class="p">.</span><span class="nx">setLatLng</span><span class="p">([</span><span class="nx">lat</span><span class="p">,</span> <span class="nx">lon</span><span class="p">]);</span>
+        <span class="nx">isscirc</span><span class="p">.</span><span class="nx">setLatLng</span><span class="p">([</span><span class="nx">lat</span><span class="p">,</span> <span class="nx">lon</span><span class="p">]);</span>
+        <span class="nx">map</span><span class="p">.</span><span class="nx">panTo</span><span class="p">([</span><span class="nx">lat</span><span class="p">,</span> <span class="nx">lon</span><span class="p">],</span> <span class="nx">animate</span><span class="o">=</span><span class="kc">true</span><span class="p">);</span>
+    <span class="p">});</span>
+    <span class="nx">setTimeout</span><span class="p">(</span><span class="nx">moveISS</span><span class="p">,</span> <span class="mi">5000</span><span class="p">);</span> 
+<span class="p">}</span></code></pre></figure>
+
+<hr>
+
+<h2 id="number-of-people-in-space">Number of People In Space</h2>
+
+<p>How many people are in space right now?</p>
+
+<p><strong>Documentation: <a href="http://open-notify.org/Open-Notify-API/People-In-Space">Number of People In Space</a></strong></p>
+
+<h3 id="example-1">Example:</h3>
+
+<p>There are currently <span id="spacepeeps" style="font-weight:bold;">12</span> humans in space. They are:</p>
+<ul id="astronames"> <li>Oleg Kononenko</li><li>Nikolai Chub</li><li>Tracy Caldwell Dyson</li><li>Matthew Dominick</li><li>Michael Barratt</li><li>Jeanette Epps</li><li>Alexander Grebenkin</li><li>Butch Wilmore</li><li>Sunita Williams</li><li>Li Guangsu</li><li>Li Cong</li><li>Ye Guangfu</li></ul>
+
+<script>
+
+$.getJSON('http://api.open-notify.org/astros.json?callback=?', function(data) {
+    var number = data['number'];
+    $('#spacepeeps').html(number);
+
+    data['people'].forEach(function (d) {
+         $('#astronames').append('<li>' + d['name'] + '</li>');
+    });
+});
+
+</script>
+
+<p>Using jquery:</p>
+
+<figure class="highlight"><pre><code class="language-javascript" data-lang="javascript"><span class="nx">$</span><span class="p">.</span><span class="nx">getJSON</span><span class="p">(</span><span class="dl">'</span><span class="s1">http://api.open-notify.org/astros.json?callback=?</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">number</span> <span class="o">=</span> <span class="nx">data</span><span class="p">[</span><span class="dl">'</span><span class="s1">number</span><span class="dl">'</span><span class="p">];</span>
+    <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#spacepeeps</span><span class="dl">'</span><span class="p">).</span><span class="nx">html</span><span class="p">(</span><span class="nx">number</span><span class="p">);</span>
+
+    <span class="nx">data</span><span class="p">[</span><span class="dl">'</span><span class="s1">people</span><span class="dl">'</span><span class="p">].</span><span class="nx">forEach</span><span class="p">(</span><span class="kd">function</span> <span class="p">(</span><span class="nx">d</span><span class="p">)</span> <span class="p">{</span>
+         <span class="nx">$</span><span class="p">(</span><span class="dl">'</span><span class="s1">#astronames</span><span class="dl">'</span><span class="p">).</span><span class="nx">append</span><span class="p">(</span><span class="dl">'</span><span class="s1">&lt;li&gt;</span><span class="dl">'</span> <span class="o">+</span> <span class="nx">d</span><span class="p">[</span><span class="dl">'</span><span class="s1">name</span><span class="dl">'</span><span class="p">]</span> <span class="o">+</span> <span class="dl">'</span><span class="s1">&lt;/li&gt;</span><span class="dl">'</span><span class="p">);</span>
+    <span class="p">});</span>
+<span class="p">});</span></code></pre></figure>
+
+
+   </div>
+  </div>
+ </div>
+</div>
+
+</div>
+ <div id="footer">
+  <div class="container">
+    <p class="pull-right"><a href="http://open-notify.org/Open-Notify-API/#">Back to top</a></p>
+    <p>Like what I'm doing? Consider donating with <iframe style="border: 0; margin-bottom: -7px; padding: 0;" src="./Open Notify -- API Documentation_files/widget.html" width="48pt" height="22pt"></iframe>
+    </p>
+    <p>
+     &nbsp;
+    </p>
+    <p class="license">
+    This site is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/3.0/deed.en_US">
+     Creative Commons Attribution 3.0 Unported License.
+     <img alt="Creative Commons License" src="./Open Notify -- API Documentation_files/80x15.png">
+    </a>
+   </p>
+  </div>
+ </div>
+ <script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-24692957-1']);
+  _gaq.push(['_setDomainName', 'open-notify.org']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+ </script>
+
+
+</body></html>

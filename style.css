@@ -1,0 +1,234 @@
+/* home page css */
+
+body {
+  font-family: 'Roboto', sans-serif;   
+  /* margin-right: 100px;
+  margin-left: 100px; */
+}
+
+
+
+h1 {
+  font-size: 2.rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  justify-content: center;
+  text-align:center;
+   padding-top: 30px;
+
+}
+
+h2, h3 {
+  color: #333;
+  margin-top: 1.8rem;
+  margin-bottom: 0.5rem;
+  text-align: center;  
+
+ 
+
+
+ 
+
+
+}
+
+p {
+  font-size: 1.rem;
+  line-height: 1.4;
+  color: #555;
+
+
+}
+#astronomyImage {
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 40px;
+  animation: feSpecularLighting 2s infinite ease-in-out;
+}
+
+#astronomyImage:hover {
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 40px;
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+@keyframes feSpecularLighting {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* 
+#astronomyImage {
+  border: 2px solid white;
+  border-radius: 20px;
+  margin-top: 40px;
+  animation: floatEffect 3s infinite ease-in-out, glowEffect 3s infinite alternate;
+}
+
+#astronomyImage:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* animation */
+@keyframes floatEffect {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes glowEffect {
+  0% {
+    box-shadow: 0 0 5px rgba(146, 117, 117, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 20px rgba(109, 110, 105, 0.8);
+  }
+} 
+
+/* Responsive Styles (Media Queries)
+These media queries make your site responsive, meaning the layout adjusts according to screen size: */
+/* Breakpoints */
+@media (max-width: 992px) {
+  h1,h2 {
+    font-size: 1rem;
+  }
+
+  .astronomy-img {
+    margin-top: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 1.rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  h1 {
+    font-size: 1.5rem;
+    
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  .astronomy-img {
+    margin-top: 10px;
+    height: 400px;
+    width: 400px;
+  }
+  }
+
+#btn1 {
+  margin-left: 200px;
+  margin-bottom: 10px;
+  padding: 10px 20px;
+
+
+}
+
+
+strong {
+  font-weight: bold;
+  color: blue;
+ 
+}
+
+/* home card css */
+/* Define the bounce animation */
+/* Ensure the row uses Flexbox */
+/* row: Flexbox is used to display the cards in a row, with wrapping and centered alignment. */
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the cards horizontally */
+
+
+}
+
+/* Make all cards equal height */
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+
+} 
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+ 
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px;
+
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  /* overflow: hidden;
+  transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; */
+  background-color: #f0f8ff;
+  /* animation: floatEffect 3s infinite ease-in-out; */
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  /* animation: fadeIn 1s ease-in-out; */
+}
+
+
+
+/* Ensure card bodies take up remaining space */
+/* will grow to take up any remaining space in the flex container, increasing the height of the card */
+.card-body {
+  flex-grow: 1;
+}
+/* 
+translateY() is a transform function that moves an element vertically.- move hover up side */
+ .card:hover{
+ 
+  transform: translateY(-5px);
+ }
+
+
+
+
+
+
+
+
+
+
+
+

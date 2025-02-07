@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Read More | Astronomy</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* General Styles */
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #1a1a2e;
+      color: #d1d1e9;
+    }
+
+    /* Article Section */
+    h2 {
+      color: #00aaff;
+      font-weight: 700;
+    }
+
+    .text-muted {
+      color: #7f8c8d !important;
+    }
+
+    img {
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+      max-width: 100%;
+      height: auto;
+    }
+
+    p {
+      line-height: 1.8;
+    }
+
+    a.btn-primary {
+      background-color: #00aaff;
+      border: none;
+      transition: background-color 0.3s ease;
+    }
+
+    a.btn-primary:hover {
+      background-color: #0077cc;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #121829;
+      color: #888;
+      padding: 1rem 0;
+    }
+
+    footer p {
+      margin: 0;
+    }
+  </style>
+</head>
+<div id="header"></div>
+<body>
+
+  <!-- Article Content -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="text-center mb-4">James Webb Telescope Captures Distant Galaxy</h2>
+      <p class="text-muted text-center">Published on January 6, 2025</p>
+      <div class="text-center mb-4">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMf4XVkzky9_CBR31n0paf8pSQEjql5fZvRw&s" class="img-fluid rounded" alt="James Webb Telescope">
+      </div>
+      <p>The James Webb Space Telescope has amazed scientists yet again with its extraordinary ability to capture distant celestial objects. Recently, it captured an image of a galaxy 13 billion light-years away, shedding light on the early universe.</p>
+      <p>This discovery has provided new insights into galaxy formation and evolution. Astronomers believe this galaxy, named GN-z11, is one of the oldest and most distant galaxies ever observed.</p>
+      <p>The telescope's infrared capabilities allow it to see through cosmic dust, making it possible to study such ancient and distant objects. This finding will contribute to our understanding of the universe's origins.</p>
+      <a href="/Science.html" class="btn btn-primary mt-3">Back to News</a>
+    </div>
+  
+  </section>
+  <div id="footer"></div>
+ 
+  <!-- // Fetch and include the header -->
+   <script>
+  fetch('header.html')
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById('header').innerHTML = data;
+    })
+    .catch(error => console.error('Error fetching the header:', error));
+
+
+      // Fetch and include the footer dynamically
+      fetch('footer.html')
+      .then(response => response.text())
+      .then(data => {
+        document.getElementById('footer').innerHTML = data;
+      })
+      .catch(error => console.error('Error loading footer:', error));
+</script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

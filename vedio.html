@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Astronomy Website</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&family=Roboto:wght@300;500&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <style>
+
+
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    margin-top: 50px;
+    margin: 50px;
+}
+
+.container {
+    max-width: 1200px;
+   
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    margin: 100px;
+
+}
+
+/* Section Styling */
+.section h1{
+    margin: 40px 0;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    text-align: center;
+
+}
+
+
+/* Flexbox for Videos */
+.video-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center; /* Center align videos */
+
+}
+
+/* Video Styling */
+.video-row video {
+    width: 30%;
+    height: 200px;  
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    object-fit: cover; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 100px;
+}
+
+
+.video-row video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .video-row video {
+        width: 45%; /* Two videos per row on tablets */
+    }
+}
+
+@media (max-width: 576px) {
+    .video-row video {
+        width: 100%; /* Full width videos on small screens */
+    }
+}
+
+</style>
+    
+   
+
+</head>
+<div id="header"></div>
+<body>
+    <div class="container-fluid">
+      
+        <div class="section">
+          <h1>Welcome to Astronomy Video</h1>
+        <div class="video-row">
+       
+            <video src="video/4bfb5d18b6fda0606330b0be0be1772c (1).mp4" controls></video>
+            <video src="video/2288346-hd_1920_1080_25fps.mp4" controls></video>
+            <video src="video/e85821d1219848e8b1d4246822e05f74 (1).mp4" controls></video>
+          </div>
+        </div>
+     
+        <div class="section">
+          <div class="video-row">
+            <video src="video/12722063-uhd_3840_2160_24fps.mp4" controls></video>
+            <video src="video/20481077-hd_1920_1080_30fps.mp4" controls></video>
+            <video src="video/a66645cee199f9181534ce95fa533d40.mp4" controls></video>
+          </div>
+     
+        </div>
+       
+      </div>
+      <div style="margin-top: 50px;">
+      <div id="footer"></div>
+    </div>
+  
+
+ <script>
+     // Fetch and include the header
+     fetch('header.html')
+        .then(response => response.text())
+        .then(data => {
+          document.getElementById('header').innerHTML = data;
+        })
+        .catch(error => console.error('Error fetching the header:', error));
+
+
+        // footer
+        fetch('footer.html')
+        .then(response => response.text())
+        .then( data => {
+          document.getElementById('footer').innerHTML = data;
+        })
+        .catch(error => console.error('Error fetching the footer:', error));
+ </script>
+</body>
+</html>

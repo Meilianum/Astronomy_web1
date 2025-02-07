@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Astronomy Website</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+    <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 50vh;
+    }
+    
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+       width: 100%; 
+      box-sizing: border-box;
+      
+    }
+    
+    .footer-container {
+      display: flex;
+       flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px; 
+      max-width: 1200px;
+      margin: 0 auto; 
+    
+    }
+    
+    .footer-column {
+      flex: 1;
+      min-width: 250px; /* Increased to make columns more flexible */
+      margin-bottom: 20px;
+    }
+    
+    .footer-column h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #0f8bf1;
+    }
+    
+    .footer-column p,
+    .footer-column ul {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-column ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-column ul li a:hover {
+      color: #0f5ef1;
+    }
+   
+    .social-icons a {
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      color: #3033d1;
+    }
+    
+    .footer-bottom {
+      margin-top: 30px;
+      border-top: 1px solid #555;
+      /* padding-top: 10px; */
+      font-size: 0.8rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-column {
+        text-align: center;
+        width: 100%; /* Make each column take full width */
+      
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .footer-column iframe {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .footer {
+        padding: 15px;
+      }
+
+      .footer-column h3 {
+        font-size: 1.2rem;
+      }
+
+      .footer-column p {
+        font-size: 0.8rem;
+      }
+
+      .footer-column ul li {
+        font-size: 0.8rem;
+      }
+
+      .footer-column ul li a {
+        font-size: 0.9rem;
+      }
+
+      .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 8px;
+      }
+    }
+</style>    
+</head>
+
+<body>
+<!-- Your main content here -->
+
+<!-- Footer --> 
+<div class="container-fluid">
+  <footer class="footer">
+    <div class="footer-container row"> <!-- Added row class for proper alignment -->
+      
+      <!-- About Us Section -->
+      <div class="footer-column col-sm-6 col-md-4 col-lg-12">
+        <h3>About Us</h3>
+        <p style="color: #fff;">Explore the wonders of the cosmos with our astronomy insights and celestial updates.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.634324577569!2d67.02549227471758!3d24.910451943256597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fb94eb666b5%3A0x6e383e3adce474a4!2sAptech%20Computer%20Education%20Site%20Center!5e0!3m2!1sen!2s!4v1737702676578!5m2!1sen!2s" 
+        width="100%" height="200" style="border:5px solid blue; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
+      <!-- Quick Links Section -->
+      <div class="footer-column col-sm-12 col-md-4">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/Home.html">Home</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="/Gallery.html">Gallery</a></li>
+          <li><a href="/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Social Media Section -->
+      <div class="footer-column col-sm-12 col-md-4">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Meilianum"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+      <p style="color: #fff; margin-top: 20px;">&copy; 2025 Astronomy World. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+  <script>
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+
+        document.getElementById("location").innerHTML =
+          "Latitude: " + latitude + "<br>Longitude: " + longitude;
+      }, function (error) {
+        alert("Error: " + error.message);
+      });
+    } else {
+      alert("Geolocation is not supported by your browser.");
+    }
+  </script>
+
+</body>
+
+</html>

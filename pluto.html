@@ -1,0 +1,361 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PLUTO</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- header -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- footer -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<style>
+  * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+  }
+
+  body {
+      font-family: 'Roboto', sans-serif;
+    /* page k  horizonta scroll end */
+      overflow-x: hidden; 
+      padding-top: 70px; 
+      margin-top: 50px;
+  }
+
+  /* Navbar Styling */
+  .navbar {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      
+      background-color: #343a40 !important;
+      padding: 10px 20px;
+  }
+
+  .container-fluid {
+      padding: 0; 
+      margin: 0; 
+      width: 100%; 
+  }
+
+  .navbar-brand img.logo {
+      height: 50px;
+      width: 50px;
+  }
+
+  .nav-link {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      color: white;
+  }
+
+  .nav-link:hover {
+      background-color: #00bcd4;
+      color: rgb(10, 9, 9);
+      border-radius: 10px;
+  }
+
+  /* Dropdown Styling */
+  #dropdown {
+      border: none;
+      padding: 8px;
+      font-size: 16px;
+      border-radius: 5px;
+      background-color: #d8cbcb;
+      color: #343a40;
+      margin-right: 40px;
+  }
+
+  #dropdown:hover {
+      background-color: #00bcd4;
+  }
+
+  /* Modal Styling */
+  .modal-header, .modal-footer {
+      background-color: #343a40;
+      color: #ffffff;
+  }
+</style>
+</head>
+
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <div class="container-fluid">
+      <a class="navbar-brand d-flex align-items-center" href="/Astronomy.html">
+          <img class="logo" src="image/logo.jpg" alt="Astronomy Hub Logo">
+          <h3 class="ms-2">ASTRONOMY HUB</h3>
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav me-auto d-flex align-items-center gap-3">
+              <li class="nav-item"><a class="nav-link" href="/Home.html"><i class="fa fa-home"></i> Home</a></li>
+              <li class="nav-item"><a class="nav-link" href="/Science.html"><i class="fa fa-book"></i> Science</a></li>
+              <li class="nav-item"><a class="nav-link" href="/Constellation.html"><i class="fa fa-star"></i> Constellation</a></li>
+              <li class="nav-item"><a class="nav-link" href="/earth.html"><i class="fa fa-rocket"></i> Planets</a></li>
+              <li class="nav-item"><a class="nav-link" href="/vedio.html"><i class="fa fa-video"></i> Video</a></li>
+              <li class="nav-item">
+                  <!-- This JavaScript event handler is triggered when the user selects a different option -->
+                  <select id="dropdown" onchange="window.location.href=this.value;">
+                      <option value="">Choose a page</option>
+                      <option value="Gallery.html">Gallery 1</option>
+                      <option value="Gallery2.html">Gallery 2</option>
+                  </select>
+              </li>
+          </ul>
+          <form class="d-flex align-items-center gap-3" method="get" action="/Science.html">
+              <div class="input-group">
+                  <span class="input-group-text"><i class="fa fa-search"></i></span>
+                  <input class="form-control" type="text" name="search" placeholder="Search" required>
+                  <button class="btn btn-primary" type="submit">Search</button>
+              </div>
+          </form>
+      </div>
+  </div>
+</nav>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+<script src="/index.js"></script>
+</header>
+<div class="container py-5">
+  <div class="row">
+    <!-- Image column -->
+    <div class="col-md-4 col-lg-4 d-flex justify-content-center align-items-center">
+      <img class="img_deg img-fluid" src="image/pluto.jpeg.jfif" style="max-width: 100%; height: 80%;">
+    </div>
+<!-- PLUTO -->
+    <!-- Text column -->
+    <div class="col-md-8">
+      <h1 class="text-center">PLUTO</h1>
+      <p>
+        Pluto, once the ninth planet, is now classified as a dwarf planet by the International Astronomical Union. With a diameter of about 2,377 kilometers, it is smaller than Earth's Moon. Located in the Kuiper Belt, a region beyond Neptune filled with icy bodies, Pluto is the most famous member of this distant group.
+        Pluto orbit is highly elliptical, taking 248 Earth years to complete one revolution around the Sun. Its orbit is also tilted relative to the solar system's plane, bringing it closer to the Sun than Neptune at times. However, gravitational interactions ensure their orbits never cross, preventing any collisions.
+        The surface of Pluto is a mix of rock and ice, featuring plains, mountains, and craters. A prominent feature is Tombaugh Regio, a heart-shaped region named after Pluto’s discoverer, Clyde Tombaugh. Pluto's atmosphere, made up of methane and carbon monoxide, creates a thin, hazy layer that expands and contracts depending on its distance from the Sun.
+        Pluto has five known moons, with Charon being the largest. Charon size is so large in comparison to Pluto that they are often considered a binary system. NASA’s New Horizons mission provided the first close-up images of Pluto in 2015, revealing fascinating details about its surface and atmosphere.
+      </p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 50vh;
+    }
+    
+    .footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 40px;
+      text-align: center;
+       width: 100%; 
+      box-sizing: border-box;
+      
+    }
+    
+    .footer-container {
+      display: flex;
+       flex-wrap: wrap;
+      justify-content: space-around;
+      gap: 20px; 
+      max-width: 1200px;
+      margin: 0 auto; 
+    
+    }
+    
+    .footer-column {
+      flex: 1;
+      min-width: 250px; /* Increased to make columns more flexible */
+      margin-bottom: 20px;
+    }
+    
+    .footer-column h3 {
+      margin-bottom: 15px;
+      font-size: 1.5rem;
+      color: #0f8bf1;
+    }
+    
+    .footer-column p,
+    .footer-column ul {
+      font-size: 0.9rem;
+      line-height: 1.6;
+    }
+    
+    .footer-column ul {
+      list-style: none;
+      padding: 0;
+    }
+    
+    .footer-column ul li {
+      margin-bottom: 10px;
+    }
+    
+    .footer-column ul li a {
+      color: #fff;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-column ul li a:hover {
+      color: #0f5ef1;
+    }
+   
+    .social-icons a {
+      color: #fff;
+      font-size: 1.5rem;
+      margin: 0 10px;
+      transition: color 0.3s ease;
+    }
+    
+    .social-icons a:hover {
+      color: #3033d1;
+    }
+    
+    .footer-bottom {
+      margin-top: 30px;
+      border-top: 1px solid #555;
+      /* padding-top: 10px; */
+      font-size: 0.8rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .footer-container {
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .footer-column {
+        text-align: center;
+        width: 100%; /* Make each column take full width */
+      
+      }
+
+      .social-icons {
+        display: flex;
+        justify-content: center;
+        margin-top: 10px;
+      }
+
+      .footer-column iframe {
+        max-width: 100%;
+        height: auto;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .footer {
+        padding: 15px;
+      }
+
+      .footer-column h3 {
+        font-size: 1.2rem;
+      }
+
+      .footer-column p {
+        font-size: 0.8rem;
+      }
+
+      .footer-column ul li {
+        font-size: 0.8rem;
+      }
+
+      .footer-column ul li a {
+        font-size: 0.9rem;
+      }
+
+      .social-icons a {
+        font-size: 1.2rem;
+        margin: 0 8px;
+      }
+    }
+</style>    
+</head>
+
+<body>
+<!-- Your main content here -->
+
+<!-- Footer --> 
+<div class="container-fluid">
+  <footer class="footer">
+    <div class="footer-container row"> <!-- Added row class for proper alignment -->
+      
+      <!-- About Us Section -->
+      <div class="footer-column col-sm-6 col-md-4 col-lg-12">
+        <h3>About Us</h3>
+        <p style="color: #fff;">Explore the wonders of the cosmos with our astronomy insights and celestial updates.</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3618.634324577569!2d67.02549227471758!3d24.910451943256597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3eb33fb94eb666b5%3A0x6e383e3adce474a4!2sAptech%20Computer%20Education%20Site%20Center!5e0!3m2!1sen!2s!4v1737702676578!5m2!1sen!2s" 
+        width="100%" height="200" style="border:5px solid blue; border-radius: 10px;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+      
+      <!-- Quick Links Section -->
+      <div class="footer-column col-sm-12 col-md-4">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><a href="/Home.html">Home</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="/Gallery.html">Gallery</a></li>
+          <li><a href="/Contact.html">Contact</a></li>
+        </ul>
+      </div>
+      
+      <!-- Social Media Section -->
+      <div class="footer-column col-sm-12 col-md-4">
+        <h3>Follow Us</h3>
+        <div class="social-icons">
+          <a href="#"><i class="fab fa-facebook"></i></a>
+          <a href="#"><i class="fab fa-twitter"></i></a>
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-linkedin"></i></a>
+          <a href="https://github.com/Meilianum"><i class="fab fa-github"></i></a>
+        </div>
+      </div>
+      
+    </div>
+
+    <!-- Footer Bottom Section -->
+    <div class="footer-bottom">
+      <p style="color: #fff; margin-top: 20px;">&copy; 2025 Astronomy World. All rights reserved.</p>
+    </div>
+  </footer>
+</div>
+
+  <script>
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(function (position) {
+        var latitude = position.coords.latitude;
+        var longitude = position.coords.longitude;
+
+        document.getElementById("location").innerHTML =
+          "Latitude: " + latitude + "<br>Longitude: " + longitude;
+      }, function (error) {
+        alert("Error: " + error.message);
+      });
+    } else {
+      alert("Geolocation is not supported by your browser.");
+    }
+  </script>
+</footer>
+</body>
+</html>

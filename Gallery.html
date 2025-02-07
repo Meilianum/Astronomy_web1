@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Example</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <link rel="stylesheet" href="style.css">
+    <!-- Include jQuery -->
+    <script src="https://code.jquery.com/jquery-3.7.1.js"
+        integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style1.css">
+     <style>
+      body {
+           background-color: #eeeeea;
+}
+        .row-1,
+        .row-2,
+        .row-3 {
+            /* padding: 15px; */
+            border: 1px solid #ccc;
+            margin: 10px 0;
+            margin-top: 40px;
+            gap: 10px;
+           
+        }
+
+        .row-1,.row-2 ,.row3 {
+            
+          text-align: center;
+           
+        }  
+
+        <!-- .row h1{
+            margin-bottom: 30px;
+            text-align: center;
+           margin-top: 40px;
+          
+        } 
+        h3:hover{
+            color: blue;
+        } 
+        p:hover{
+            color: blue;
+        }
+        .row h1:hover {
+            color: blue
+        }
+       
+        .toggleBtn {
+            margin-top: 10px;
+            border: 2px solid saddlebrown;
+            border-radius: 5px;
+            background-color: rgb(113, 113, 209);
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        
+          
+          
+        }
+
+        .toggleBtn:hover {
+            background-color:white;
+            color: black;
+        }
+
+        img {
+            width: 100%;
+            /* Ensures that images are responsive */
+            height: 350px;
+            /* Fixed height for all images */
+            object-fit: cover;
+            /* Ensures images maintain aspect ratio and cover the given area */
+        }
+
+        img:hover {
+            transform: scale(1.1);
+            transition: transform 0.3s ease-in-out;
+        }
+
+      
+ 
+    </style>
+</head>
+
+<body> 
+
+    <!-- This  header  -->
+     <div id="header"></div>
+
+    <div class="container-fluid">
+     
+        <div class="row">
+            <h1>Welcome to Astronomy Gallery</h1>
+            <div class="col-sm-6 col-md-4 col-lg-4 row-1">
+                <h3><img src="image/yuri.jpeg" alt=""></h3>
+                <h3>Yuri Gagarin</h3>
+                <p>Yuri Gagarin was the first human to journey into outer space on April 12, 1961, aboard Vostok 1. His
+                    flight lasted 108 minutes, orbiting the Earth once.</p>
+                <button class="toggleBtn" >clickeded</button>
+            </div>
+
+            <div class="col-sm-6 col-md-4 col-lg-4 row-2">
+                <h3><img src="/image/nail.jpeg" alt=""></h3>
+                <h3>Neil Armstrong</h3>
+                <p>Neil Armstrong was the first person to walk on the moon on July 20, 1969, during the Apollo 11
+                    mission. His famous words were, "That's one small step for man, one giant leap </p>
+                <button class="toggleBtn">clickeded</button>
+            </div>
+
+
+
+            <div class="col-sm-6 col-md-4 col-lg-4 row-3">
+                <h3><img src="image/Valentina1963.webp" alt="Valentina Tereshkova" alt="Valentina Tereshkova"></h3>
+                <h3>Valentina Tereshkova</h3>
+                <p>Valentina Tereshkova was the first woman in space, flying aboard Vostok 6 on June 16, 1963. She spent
+                    almost 3 days in orbit and conducted various scientific experiments.</p>
+                <button class="toggleBtn">clickeded</button>
+
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-4 col-lg-4 row-1">
+                    <h3><img src="image/r (1).jpeg" alt=""></h3>
+                    <h3>solar system</h3>
+                 <p>The Solar System is a collection of celestial objects, including the Sun and all the objects that
+                    <!-- are bound by its gravitational force.  -->
+                    </p>
+                    <button class="toggleBtn">clickeded</button>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 row-2">
+                    <h3><img src="image/isto2.jpg" alt=""></h3>
+                    <h3>Developer</h3>
+                    <p>A developer is someone who writes code and creates software applications, websites, or systems.
+                        <!-- Their role can range from designing user interfaces to writing backend server code.  -->
+                        </p>
+                    <button class="toggleBtn">clickeded</button>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 row-3">
+                    <h3><img src="image/nasa5.jpeg" alt=""></h3>
+                    <h3>Galaxy</h3>
+                    <p>A galaxy is a collection of stars, planets, and other celestial objects that are bound by their
+                        gravity. Here's a brief overview of the structure and compositionofagalaxy.</p>
+
+                     <button class="toggleBtn">clickeded</button>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 row-1">
+                    <h3><img src="image/black hole.jpeg" alt=""></h3>
+                    <h3>Black Hole</h3>
+                    <p>A black hole is a region of space where gravity is so strong that nothing can escape it. Here's a
+                     </p>
+                    <button class="toggleBtn">clickeded</button>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 row-2">
+                    <h3><img src="image/moonphases.jpg" alt=""></h3>
+                    <h3>Moon Phases</h3>
+                    <p>The phases of the moon are a natural phenomenon that occur on the surface of the Earth's moon.
+                        Here's a brief overview of the different phases of the moon and their significance.</p>
+                    <button class="toggleBtn">clickeded</button>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 row-3">
+                    <h3><img src="image/Premium Vector _ Eclipse phases background.jpeg" alt="eclipse"></h3>
+                    <h3>Eclipse</h3>
+                    <p>An eclipse is a natural phenomenon that occurs when the Sun or Moon passes between the Earth and
+                        the Moon. Here's a brief overview of the different types of eclipses and their significance.</p>
+                    <button class="toggleBtn">clickeded</button>
+
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 row-1">
+                    <h3><img src="image/images2.jpg" alt="astronaut"></h3>
+                    <h3>Astronaut History</h3>
+
+                 <p>Astronauts are people who fly in space as part of human exploration missions    Here’s a short history of astronauts:
+
+                    Early Space Exploration (Pre-Astronaut Era)
+                    Before the first astronauts, space exploration was mainly carried out by robotic spacecraft. 
+                    <!-- Soviet Union launched the first artificial satellite, Sputnik  -->
+                     </p>
+                
+                    
+                    <button class="toggleBtn">clickeded</button>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 row-2">
+                    <h3><img src="image/r (3).jpeg" alt="nasa"></h3>
+                    <h3>NASA</h3>
+                    <p>In the United States, NASA (National Aeronautics and Space Administration) was established in
+                        1958 to compete with the Soviet space program. The first American astronaut to go into space was
+                        Alan Shepard on May 5, 1961, aboard Freedom 7, making a suborbital flight that lasted just over
+                        15 minutes..</p>
+                    <button class="toggleBtn">clickeded</button>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 row-3">
+                    <h3><img src="image/download (14).jpeg" alt="earth"></h3>
+                    <h3>EARTH</h3>
+                    <p>Earth is the third planet from the Sun and the only known celestial body to support life. It is
+                        unique in the solar system due to its abundance of liquid water, diverse ecosystems, and
+                        breathable atmosphere. Earth's geological, atmospheric, and biological processes create a
+                        dynamic environment that sustains life in a varietyofforms.</p>
+                    <button class="toggleBtn">clickeded</button>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 row-1">
+                    <h3><img src="image/download (1).jpeg" alt="isr"></h3>
+                    <h3> International Star Registry (ISR) owner</h3>
+                    <p>The International Star Registry (ISR) was founded by David L. Smith in 1979. The company became
+                        one of the first to offer symbolic star-naming services to the public.
+                    <button class="toggleBtn">clickeded</button>
+                </div>
+                <div class="col-sm-6 col-md-4 col-lg-4 row-2">
+                    <h3><img src="image/whitehole.jpg" alt="white-hole"></h3>
+                    <h3>White Hole</h3>
+                    <p>A white hole is a hypothetical astronomical object that is essentially the opposite of a black
+                        hole. While a black hole attracts everything, even light, into it, a white hole is theorized to
+                        expel matter and energy, allowing light to pass through it.
+                    </p>
+                    <button class="toggleBtn">clickeded</button>
+                </div>
+
+                <div class="col-sm-6 col-md-4 col-lg-4 row-3">
+                    <h3><img src="image/images (3).jpeg" alt="milky way"></h3>
+                    <h3>Milky Way</h3>
+                    <p>The Milky Way is the galaxy that contains our solar system. It is a spiral galaxy with a diameter
+                        of about 100,000 light-years and a mass of about 10,000 times that of the Sun.</p>
+                    <button class="toggleBtn">clickeded</button>
+                </div> 
+            </div>
+          
+               <div id="footer"></div>
+            
+            
+             
+               <script>
+                // Fetch the 'header.html' and 'footer.html' files and inject their content dynamically
+                fetch('header.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('header').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error fetching the header:', error));
+
+
+                // add to jQuery 
+                
+                $(document).ready(function() {
+            // When any toggle button is clicked
+            $(".toggleBtn").click(function() {
+                var $this = $(this); // This refers to the clicked button
+                var description = $this.prev("p"); // Get the description paragraph before the button
+                
+                // Toggle the description paragraph visibility
+                description.slideToggle();
+
+                // Change the text of the button after click
+                if ($this.text() === "Click to toggle description") {
+                    $this.text(' what is three largest plants ? Earth – Largest planet, liquid, diameter: 12,742 miles,Jupiter – Largest planet, gas giant, diameter: 86,881 miles,Saturn – Second-largest, gas giant, famous for rings, diameter: ,Uranus – Third-largest, ice giant, unique tilt, diameter: 31,518 miles')
+                } else {
+                    $this.text("Click to toggle description");
+                }
+            });
+        });
+
+
+
+                  
+                //   fetch footer
+                   fetch('footer.html')
+                    .then(response => response.text())
+                    .then(data => {
+                        document.getElementById('footer').innerHTML = data;
+                    })
+                    .catch(error => console.error('Error fetching the footer:', error));
+                </script>
+        
+
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>  
+
+
+
+
